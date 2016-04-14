@@ -37,11 +37,13 @@ npm install
 ## Run
 
 ```sh
-gulp
+npm start
 ```
 
 ## Release History
 
+* 0.1.1
+    * Folder structure changed
 * 0.1.0
     * Work in progress
 

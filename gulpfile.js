@@ -1,10 +1,10 @@
 var gulp = require('gulp');
 
+var appDev = 'src/';
 var assetsDev = 'assets/';
-var assetsProd = 'src/';
 
-var appDev = 'dev/';
 var appProd = 'app/';
+var assetsProd = 'app/assets/';
 
 /* Mixed */
 var ext_replace = require('gulp-ext-replace');
