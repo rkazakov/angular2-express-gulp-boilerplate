@@ -1,5 +1,5 @@
-# Agular 2 Gulp Browserify boilerplate
-> Basic boilerplate project with Angular 2, Express, Gulp, Browserify and SASS/Stylus
+# Agular 2 Express Gulp boilerplate
+> Basic boilerplate project with Angular 2, Express, Gulp, and SASS
 
 ## Modules
 
@@ -10,15 +10,20 @@
 - reflect-metadata
 - rxjs
 - zone.js
+- locallydb
 
 ## Development modules
 
 - autoprefixer
+- browser-sync
 - cssnano
 - concurrently
 - gulp
 - gulp-ext-replace
 - gulp-imagemin
+- gulp-concat
+- gulp-nodemon
+- gulp-rename
 - gulp-postcss
 - gulp-sourcemaps
 - gulp-typescript
@@ -42,6 +47,9 @@ npm start
 
 ## Release History
 
+* 0.1.4
+    * README updates
+    * package.json updates
 * 0.1.3
     * Folder structure changed
     * Styling minification updated
@@ -58,4 +66,4 @@ Originally forked from [Angular2 boilerplate project](https://github.com/mschwar
 
 Ruslan Kazakov – [@ruslankazakov](https://twitter.com/ruslankazakov)
 
-[https://github.com/rkazakov/angular2-gulp-browserify-boilerplate](https://github.com/rkazakov/angular2-gulp-browserify-boilerplate)
+[https://github.com/rkazakov/angular2-express-gulp-boilerplate](https://github.com/rkazakov/angular2-express-gulp-boilerplate)
