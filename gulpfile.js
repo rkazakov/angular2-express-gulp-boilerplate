@@ -1,8 +1,8 @@
 var gulp = require('gulp');
 
 /* DEV FOLDERS */
-var appDev = 'src/';
-var assetsDev = 'assets/';
+var appDev = 'client/';
+var assetsDev = 'client/assets/';
 
 /* PROD FOLDERS */
 var appProd = 'app/';
@@ -51,17 +51,17 @@ gulp.task('build-ts', function () {
     .pipe(sourcemaps.init())
     .pipe(typescript(tsProject))
     .pipe(sourcemaps.write())
-    //.pipe(jsuglify())
+    //.pipe(uglify())
     .pipe(gulp.dest(appProd));
 });
 
 gulp.task('build-css', function () {
-  return gulp.src(assetsDev + 'scss/*.scss')
+  return gulp.src(assetsDev + 'styles/*.scss')
     .pipe(sourcemaps.init())
     .pipe(postcss([precss, autoprefixer, cssnano]))
     .pipe(sourcemaps.write())
     .pipe(ext_replace('.css'))
-    .pipe(gulp.dest(assetsProd + 'css/'));
+    .pipe(gulp.dest(assetsProd + 'styles/'));
 });
 
 gulp.task('build-img', function () {
@@ -109,7 +109,7 @@ gulp.task('browser-sync', ['nodemon'], function() {
     // notice that the default port is 3000, which would clash with our expressjs
     port: 4000,
     // open the proxied app in chrome
-    browser: 'google chrome'
+    //browser: 'google chrome'
   });
 });
 
@@ -119,7 +119,7 @@ gulp.task('bs-reload', function() {
 
 gulp.task('watch', function () {
   gulp.watch(appDev + '**/*.ts', ['build-ts', browserSync.reload]);
-  gulp.watch(assetsDev + 'scss/**/*.scss', ['build-css', browserSync.reload]);
+  gulp.watch(assetsDev + 'styles/**/*.scss', ['build-css', browserSync.reload]);
   gulp.watch(assetsDev + 'img/*', ['build-img', browserSync.reload]);
   gulp.watch('*.html', ['bs-reload']);
 });

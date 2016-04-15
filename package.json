@@ -1,6 +1,6 @@
 {
   "name": "angular2-gulp-browserify-boilerplate",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Angular 2, Express, Gulp, Browserify and SASS/Stylus boilerplate",
   "scripts": {
     "lite": "lite-server",

@@ -11,7 +11,7 @@
     "outDir": "./app"
   },
   "filesGlob": [
-    "./src/**/*.ts",
+    "./client/**/*.ts",
     "!./node_modules/**/*.ts"
   ],
   "exclude": [
@@ -23,7 +23,7 @@
     "rewriteTsconfig": true
   },
   "files": [
-    "./src/app.component.ts",
-    "./src/main.ts"
+    "./client/app.component.ts",
+    "./client/main.ts"
   ]
 }

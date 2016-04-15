@@ -42,6 +42,9 @@ npm start
 
 ## Release History
 
+* 0.1.3
+    * Folder structure changed
+    * Styling minification updated
 * 0.1.2
     * Back-end Node support added
 * 0.1.1
